@@ -13,6 +13,7 @@ public class MazeGenerator : MonoBehaviour
     public GameObject flag; // Flag object
     public GameObject itemPrefab; // Item prefab
     public GameObject rockPrefab; // Rock prefab
+    public GameObject pillarPrefab; // Pillar prefab
 
     const int N = 1; // North wall
     const int E = 2; // East wall
@@ -53,6 +54,9 @@ public class MazeGenerator : MonoBehaviour
 
         // Spawn a rock
         SpawnRockInMaze();
+
+        // Spawn a pillar
+        SpawnPillarInMaze();
     }
 
     private void InstantiatePlayer()
@@ -220,5 +224,14 @@ public class MazeGenerator : MonoBehaviour
         Vector3 rockPosition = new Vector3(randomPosition.y * tile_size + (tile_size / 2), 0.5f, randomPosition.x * tile_size + (tile_size / 2));
         GameObject rock = GameObject.Instantiate(rockPrefab);
         rock.transform.position = rockPosition;
+    }
+
+    private void SpawnPillarInMaze()
+    {
+        Vector2 randomPosition = GetRandomValidPosition();
+
+        Vector3 pillarPosition = new Vector3(randomPosition.y * tile_size + (tile_size / 2), 0.5f, randomPosition.x * tile_size + (tile_size / 2));
+        GameObject pillar = GameObject.Instantiate(pillarPrefab);
+        pillar.transform.position = pillarPosition;
     }
 }

@@ -269,6 +269,7 @@ MonoBehaviour:
   flag: {fileID: 7905870489662280582, guid: 4a93f0e1de16cf54f8a30a84990c59ee, type: 3}
   itemPrefab: {fileID: 233388794767207955, guid: 38893a25999c940429594aac1494e7f7, type: 3}
   rockPrefab: {fileID: 7816876054138069751, guid: a6704c9dff4d2a846b5e3e8c0638677f, type: 3}
+  pillarPrefab: {fileID: 8602897648889125291, guid: 475b53855f7f1144cab557bcaedbd0c0, type: 3}
   width: 5
   height: 10
 --- !u!4 &1007915296
