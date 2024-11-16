@@ -5,7 +5,7 @@
 -A maze for your character to navigate - yes
 -At least one object to pick up or interact with - one item
 -At least one enemy to impede your progress - 2 enemies
--A use of 2 materials - item and light
+-A use of 2 materials - item, rock, and pillar
 -A use of 2 light sources - item with a light, flashlight
 -A main menu, and an end-game screen - main menu and end game screen
 -Your game must have a clear objective - get a flag
